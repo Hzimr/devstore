@@ -8,7 +8,7 @@ export function ThemeToggle() {
 
   return (
     <button
-      className="rounded-md bg-black px-1 py-1 font-semibold text-white dark:bg-white dark:text-black"
+      className="rounded-2xl bg-black px-1 py-1 font-semibold text-white dark:bg-white dark:text-black"
       onClick={() => {
         setTheme(theme === 'light' ? 'dark' : 'light')
       }}
