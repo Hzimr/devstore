@@ -45,9 +45,9 @@ export default async function Home() {
           alt="moleton branco com o texto 'Come to the Ai Side' escrito na altura do peito"
         />
         <div className="absolute bottom-10 right-10 flex h-12 max-w-[280px] items-center gap-2 rounded-full border-2 border-zinc-50 bg-white/80 p-1 pl-5 dark:border-zinc-500 dark:bg-black/80">
-          <span className="truncate text-sm">Moletom AI Side</span>
+          <span className="truncate text-sm">Moleton COFFEE JAVA</span>
           <span className="flex h-full items-center justify-center rounded-full bg-violet-300 px-5 font-semibold dark:bg-violet-500">
-            R$129
+            R$109
           </span>
         </div>
       </Link>
@@ -67,9 +67,9 @@ export default async function Home() {
           alt="moleton branco com o texto 'Come to the Ai Side' escrito na altura do peito"
         />
         <div className="absolute bottom-10 right-10 flex h-12 max-w-[280px] items-center gap-2 rounded-full border-2 border-zinc-50 bg-white/80 p-1 pl-5 dark:border-zinc-500 dark:bg-black/80">
-          <span className="truncate text-sm">Moletom AI Side</span>
+          <span className="truncate text-sm">Moletom DoWihle2022</span>
           <span className="flex h-full items-center justify-center rounded-full bg-violet-300 px-5 font-semibold dark:bg-violet-500">
-            R$129
+            R$120
           </span>
         </div>
       </Link>
