@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from './components/Theme/ThemeProvider'
-import { ThemeToggle } from './components/Theme/ThemeToggle'
+import { ThemeProvider } from '../components/Theme/ThemeProvider'
+import { ThemeToggle } from '../components/Theme/ThemeToggle'
 import { twMerge } from 'tailwind-merge'
 
 const inter = Inter({
