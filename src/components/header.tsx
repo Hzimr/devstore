@@ -17,7 +17,10 @@ export function Header() {
         >
           devstore
         </Link>
+        {/* Hard Navigation (Não é SPA, tudo é recalculado) != da Soft Navigation (ideal) */}
         <form
+          action="/search"
+          method="GET"
           className={twMerge(
             'flex w-[320px] items-center gap-3 rounded-full bg-zinc-100 px-5 py-3 ring-zinc-700',
             'dark:bg-zinc-900',
@@ -25,11 +28,13 @@ export function Header() {
         >
           <Search className="h-5 w-5" />
           <input
+            name="q"
             placeholder="Buscar produtos..."
             className={twMerge(
               'flex flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-300',
               'dark:placeholder:text-zinc-500',
             )}
+            required
           />
         </form>
       </div>
