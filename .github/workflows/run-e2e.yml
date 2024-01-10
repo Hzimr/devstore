@@ -13,7 +13,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-      - name: Install PNMP
+
+      - name: Install PNPM
         uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -31,7 +32,6 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-
       - name: Install dependencies
         run: pnpm install
 
@@ -39,7 +39,7 @@ jobs:
         uses: cypress-io/github-action@v6
         env: 
           APP_URL: "http://localhost:3000"
-          NEXT_PUBLIC_API_BASE_URL: "https://devstore-api-vert.vercel.app/"
+          NEXT_PUBLIC_API_BASE_URL: "https://ignite-devstore-api.vercel.app"
         with:
           build: npm run build
           start: npm start
